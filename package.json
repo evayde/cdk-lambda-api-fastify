@@ -1,0 +1,16 @@
+{
+  "name": "cdk-api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "aws-lambda-fastify": "^1.4.2",
+    "fastify": "^2.13.1"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

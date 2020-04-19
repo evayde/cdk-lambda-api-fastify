@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add -D @types/aws-lambda-fastify
+
+PATH: 
+  D:\Program Files\PowerShell\7;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;D:\Program Files\TortoiseSVN\bin;C:\Users\EnricoGruner\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\dotnet\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;;C:\Program Files\erl10.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\PowerShell\7-preview\preview;D:\Program Files\Amazon\AWSCLI\bin\;D:\Program Files\erl10.3\bin;C:\Program Files (x86)\Elixir\bin;C:\Users\EnricoGruner\.mix\escripts;D:\Program Files\PowerShell\7\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Python\Python38-32\Scripts\;D:\Python\Python38-32\;C:\Users\EnricoGruner\.cargo\bin;C:\Users\EnricoGruner\.windows-build-tools\python27\;node_modules\windows-build-tools\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;D:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\dotnet\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\EnricoGruner\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;D:\MinGW\bin;D:\ffmpeg\bin;D:\xampp\php;D:\Program Files\MongoDB\Server\3.6\bin;D:\Android\android-sdk;D:\Android\android-sdk\tools;D:\Android\android-sdk\platform-tools;C:\Users\EnricoGruner\AppData\Roaming\Composer\vendor\bin;C:\Users\EnricoGruner\.dotnet\tools;C:\Users\EnricoGruner\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EnricoGruner\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Program Files\swipl\bin;D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.1\bin;;D:\Program Files\Java\jdk-12.0.1\bin;C:\Users\EnricoGruner\AppData\Local\Microsoft\WindowsApps;D:\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2faws-lambda-fastify: Not found
+      at Request.params.callback [as _callback] (C:\Users\EnricoGruner\AppData\Roaming\nvm\v10.15.1\node_modules\yarn\lib\cli.js:66987:18)
+      at Request.self.callback (C:\Users\EnricoGruner\AppData\Roaming\nvm\v10.15.1\node_modules\yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (C:\Users\EnricoGruner\AppData\Roaming\nvm\v10.15.1\node_modules\yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:189:13)
+      at IncomingMessage.<anonymous> (C:\Users\EnricoGruner\AppData\Roaming\nvm\v10.15.1\node_modules\yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:277:13)
+      at IncomingMessage.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1103:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "cdk-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+      "@types/node": "^13.11.1",
+      "typescript": "^3.8.3"
+    },
+    "dependencies": {
+      "aws-lambda-fastify": "^1.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  # THIS IS AN AUTOGENERATED FILE. DO NOT EDIT THIS FILE DIRECTLY.
+  # yarn lockfile v1
+  
+  
+  "@types/node@^13.11.1":
+    version "13.11.1"
+    resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.1.tgz#49a2a83df9d26daacead30d0ccc8762b128d53c7"
+    integrity sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
+  
+  aws-lambda-fastify@^1.4.2:
+    version "1.4.2"
+    resolved "https://registry.yarnpkg.com/aws-lambda-fastify/-/aws-lambda-fastify-1.4.2.tgz#7b78f349de0f55f752198d99dd9218af99027ce3"
+    integrity sha512-70RakzcQqn4uE44d1dvVVIQk7SEa6dlj95B26CH+G0Ow+WqiZZMY1pmCAEqY31uFeSiwnpKWR0GoB4ja25vp+A==
+  
+  typescript@^3.8.3:
+    version "3.8.3"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+    integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
