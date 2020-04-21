@@ -3,7 +3,6 @@ import * as lambda from '@aws-cdk/aws-lambda';
 import * as apigateway from '@aws-cdk/aws-apigateway';
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
 import * as path from "path";
-import { CfnOutput } from '@aws-cdk/core';
 
 export class CdkStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -13,7 +12,9 @@ export class CdkStack extends cdk.Stack {
     const fn = new lambda.Function(this, "MyLambda", {
       runtime: lambda.Runtime.NODEJS_12_X,
       handler: "build/lambda.handler",
-      code: lambda.Code.fromAsset(path.join(__dirname, "../cdk-api.zip"))
+      code: lambda.Code.fromAsset(path.join(__dirname, "../../"), {
+        exclude: ["cdk"]
+      })
     });
 
     // ApiGW
@@ -37,8 +38,9 @@ export class CdkStack extends cdk.Stack {
       enableIpV6: true,
     });
 
-    new CfnOutput(this, "myOut", {
+    // Output
+    new cdk.CfnOutput(this, "myOut", {
       value: feCf.domainName
-    })
+    });
   }
 }
