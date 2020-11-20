@@ -9,5 +9,4 @@
 - create @types/aws-lambda-fastify.d.ts
 - mkdir cdk && cd cdk
 - cdk init --language=typescript
-- yarn add @aws-cdk/aws-lambda @aws-cdk/aws-apigateway @aws-cdk/aws-cloudfront
-- 
+- yarn add @aws-cdk/aws-lambda @aws-cdk/aws-apigatewayv2 @aws-cdk/aws-apigatewayv2-integrations @aws-cdk/aws-cloudfront
